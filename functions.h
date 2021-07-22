@@ -1,9 +1,15 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
+#include <stdio.h>
+#include <stdint.h>
+#include <string.h>
+#include <unistd.h>
+
+
 // function declarations
 void printMenu();
-
+void addNewDisc();
 
 // typedef declarations
 
@@ -17,6 +23,6 @@ typedef struct
 	int8_t     turn;
 	uint8_t    fade;
 	float     price;
-} discModel_t;
+} disc_t;
 
 #endif
