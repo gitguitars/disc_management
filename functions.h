@@ -6,23 +6,22 @@
 #include <string.h>
 #include <unistd.h>
 
-
-// function declarations
-void printMenu();
-void addNewDisc();
-
 // typedef declarations
 
 typedef struct
 {
-	char   name[20];
+	char   name[30];
 	char   type[20];
-	char  brand[20];
-	uint8_t   speed;
-	uint8_t   glide;
-	int8_t     turn;
-	uint8_t    fade;
-	float     price;
+	char  brand[30];
+	int   speed;
+	int   glide;
+	int    turn;
+	int    fade;
+	float price;
 } disc_t;
+
+// function declarations
+void printMenu();
+void addNewDisc(disc_t *pDiscs);
 
 #endif

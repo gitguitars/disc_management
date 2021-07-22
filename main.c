@@ -18,7 +18,7 @@ int main(){
 		switch(menuSelection){
 
 			case 1:
-				addNewDisc();
+				addNewDisc(disc_t *pDiscs);
 				break;
 
 			case 2:
